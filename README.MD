@@ -13,8 +13,6 @@ Table of Contents
 
 ---
 
-This project serves as a template for future AVR MCU projects. It contains a pre-configured setup and a modular structure to facilitate easy development and modification.
-
 ## Project Overview
 
 Provide a brief overview of the project, explaining its purpose and functionality.
@@ -29,7 +27,11 @@ Describe the structure of the project directory and highlight the key files and 
 
 ## Configuration
 
-List any configuration files or settings that need to be modified for specific projects. Mention how to modify these files for customization.
+List
+
+![Alt Text](./image/SDS00003.png)
+
+![Alt Text](./image/SDS00004.png)
 
 ## Usage
 
