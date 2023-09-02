@@ -1,4 +1,4 @@
-# Project Template Readme
+# 8-bit Direct Digital Synthesis
 
 Table of Contents
 - [Project Overview](#project-overview)
@@ -13,47 +13,30 @@ Table of Contents
 
 ---
 
-## Project Overview
+## Theory
 
 Provide a brief overview of the project, explaining its purpose and functionality.
 
-## Getting Started
+## Circuit
 
 Explain the necessary steps to get started with the project. Include any dependencies or tools required for development.
 
-## Project Structure
+## Operation
 
 Describe the structure of the project directory and highlight the key files and folders. 
 
-## Configuration
+## Conclusion
 
-List
+With an extremely low part count (one MCU and four passive components), this solution is suitable for ad-hoc waveform generation.
 
 ![Alt Text](./image/SDS00003.png)
+60 Hz Sine Wave
 
 ![Alt Text](./image/SDS00004.png)
+500 Hz Sine Wave
 
 ## Usage
 
 Explain how to use the project template effectively. Provide guidelines, best practices, and any conventions to follow.
 
-## Customization
-
-Detail the sections or files that can be modified in future projects. Encourage developers to tailor the template to fit their specific needs.
-
-## Resources
-
-If there are any external resources or references relevant to the project, provide links or documentation references here.
-
-## Contributing
-
-Specify guidelines for contributing to the project or encourage users to submit improvements and suggestions.
-
-## License
-
-State the license information for the project.
-
 ---
-
-Feel free to modify this .md file as needed to adapt it to your specific project requirements. Remember to update the sections and content accordingly whenever necessary.
-"# direct_digital_sythesis" 
