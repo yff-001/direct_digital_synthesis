@@ -18,13 +18,13 @@ In its simplest form, a direct digital synthesizer can be implemented from a pha
 
 ### Phase Accumulator
 
-The phase accumulator is driven by the clock and steps through the phase cycle. Its output represents the phase information of the waveform being generated. In this example, it is implemented with a 32-bit word.
+The phase accumulator is driven by the clock and steps through the phase cycle. Its output represents the phase information of the waveform being generated. 
 
 ![Alt Text](./image/phase_wheel.png)
 
 ### D/A Converter
 
-Phase information from phase accumulator is converted to analog voltage by D/A converter.
+Phase information from phase accumulator is converted to analog voltage by D/A converter. 
 
 ###  Reference Clock
 
@@ -32,13 +32,19 @@ The clock provides timing reference.
 
 ## Circuit
 
-Explain the necessary steps to get started with the project. Include any dependencies or tools required for development.
+In this Atmega328P based implementation, the reference clock is derived from the interal clock of the MCU. The D/A converter consists of only a second order low pass filter with a cut-off frequency of ~795 Hz.
 
 ![Alt Text](./image/dds.svg)
 
 ## Operation
 
-Describe the structure of the project directory and highlight the key files and folders. 
+Timer 0 is configured to phase correct PWM mode. In this mode, counter repeatedly counts from 0 to 255 and back to 0. When counter value TCNT0 matches value stored in register OCR0A, pin OC0A is toggled. Thus registers OCR0A controls the duty cycle of PWM waveform. After filtering, a voltage level is produced on Output. This value is determined by the duty cycle. Since OCR0A is an 8 bit register, the produce voltage also has an 8 bit resolution.
+
+An interrupt is generated when the counter reaches zero. Since the nature of counter's dual slope operation, this interrupt is generated every (256+255=511) counts. This effectively produces a sampling frequency of 16Mhz/511=31311.15 Hz. Inside the interrupt service routine, the phase accumulator is incremented. The size of increment is determined by the desired frequency of waveform being generated.
+
+The phase accumulator is implemented with a 32 bit word. Whenever the phase accumulator is incremented, it is right shifted by 22 bits, only the upper 10 bits are used to retrieve waveform's amplitude from a 1024-element lookup table. The amplitude is stored as 8-bit integer in program space.
+
+$\(f_{waveform}\)$
 
 ## Conclusion
 
