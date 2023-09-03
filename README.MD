@@ -34,7 +34,7 @@ The clock provides timing reference.
 
 ## Circuit
 
-In this Atmega328P based implementation, the reference clock is derived from the interal clock of the MCU. The D/A converter consists of only a second order low pass filter with a cut-off frequency of ~795 Hz.
+In this Atmega328P based implementation, the reference clock is derived from the system clock of the MCU. The D/A converter consists of only a second order low pass filter with a cut-off frequency of ~795 Hz.
 
 ![Alt Text](./image/dds.svg)
 
