@@ -16,6 +16,20 @@ The fundamental theory behind DDS revolves around its capacity to create analog 
 
 ![Alt Text](./image/phase_wheel.png)
 
+In its simplest form, a direct digital synthesizer can be implemented from a phase accumulator, a D/A converter, and a reference clock.
+
+### Phase Accumulator
+
+The phase accumulator is driven by the clock and steps through the phase cycle. Its output represents the phase information of the waveform being generated. In this example, it is implemented with a 32-bit word.
+
+### D/A Converter
+
+Phase information from phase accumulator is converted to analog voltage by D/A converter.
+
+###  Reference Clock
+
+The clock provides timing reference.
+
 ## Circuit
 
 Explain the necessary steps to get started with the project. Include any dependencies or tools required for development.
