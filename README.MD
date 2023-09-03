@@ -1,21 +1,20 @@
-# 8-bit Direct Digital Synthesis
+# Direct Digital Synthesis
 
 Table of Contents
-- [Project Overview](#project-overview)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Customization](#customization)
-- [Resources](#resources)
-- [Contributing](#contributing)
-- [License](#license)
+- [Theory](#theory)
+- [Circuit](#circuit)
+- [Operation](#operation)
+- [Conclusion](#conclusion)
 
 ---
 
 ## Theory
 
-Provide a brief overview of the project, explaining its purpose and functionality.
+Direct Digital Synthesis (DDS) is a method used to generate accurate analog waveforms from digital data. It works by converting digital phase information into continuous analog signals. This process involves selecting digital phase values from an accumulator in a sequential manner, and these values are then transformed into analog voltages through a digital-to-analog converter (DAC). DDS is highly valued for its flexibility and precision in generating different frequencies, making it an essential technology in a wide range of electronic applications.
+
+The fundamental theory behind DDS revolves around its capacity to create analog waveforms by digitally controlling phase information. A reference clock signal determines the size of phase increments, and by adjusting the rate at which the phase accumulator increments, DDS can produce various frequencies. The key advantage of DDS lies in its ability to rapidly change frequencies, exhibit low phase noise, and enable precise frequency and phase adjustments, making it an indispensable tool in many electronic systems.
+
+![Alt Text](./image/SDS00003.png)
 
 ## Circuit
 
@@ -34,9 +33,5 @@ With an extremely low part count (one MCU and four passive components), this sol
 
 ![Alt Text](./image/SDS00004.png)
 500 Hz Sine Wave
-
-## Usage
-
-Explain how to use the project template effectively. Provide guidelines, best practices, and any conventions to follow.
 
 ---
