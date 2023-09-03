@@ -56,7 +56,7 @@ $\frac{f_{sampling}}{2^n}=\frac{31311.15}{2^32}=0.000007Hz$
 
 ## Conclusion
 
-With an extremely low part count (one MCU and four passive components), this solution is suitable for ad-hoc waveform generation.
+With an extremely high granualarity in generated waveform frequency and usable 8-bit vertical resolution, this implementation produces stable waveforms. With low part count (one MCU and four passive components), this solution is suitable for ad-hoc waveform generation.
 
 ![Alt Text](./image/SDS00003.png)
 60 Hz Sine Wave
