@@ -14,7 +14,7 @@ Direct Digital Synthesis (DDS) is a method used to generate accurate analog wave
 
 The fundamental theory behind DDS revolves around its capacity to create analog waveforms by digitally controlling phase information. A reference clock signal determines the size of phase increments, and by adjusting the rate at which the phase accumulator increments, DDS can produce various frequencies. The key advantage of DDS lies in its ability to rapidly change frequencies, exhibit low phase noise, and enable precise frequency and phase adjustments, making it an indispensable tool in many electronic systems.
 
-![Alt Text](./image/SDS00003.png)
+![Alt Text](./image/phase_wheel.png)
 
 ## Circuit
 
