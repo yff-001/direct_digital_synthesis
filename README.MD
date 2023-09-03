@@ -34,6 +34,8 @@ The clock provides timing reference.
 
 Explain the necessary steps to get started with the project. Include any dependencies or tools required for development.
 
+![Alt Text](./image/dds.svg)
+
 ## Operation
 
 Describe the structure of the project directory and highlight the key files and folders. 
