@@ -14,13 +14,13 @@ Direct Digital Synthesis (DDS) is a method used to generate accurate analog wave
 
 The fundamental theory behind DDS revolves around its capacity to create analog waveforms by digitally controlling phase information. A reference clock signal determines the size of phase increments, and by adjusting the rate at which the phase accumulator increments, DDS can produce various frequencies. The key advantage of DDS lies in its ability to rapidly change frequencies, exhibit low phase noise, and enable precise frequency and phase adjustments, making it an indispensable tool in many electronic systems.
 
-![Alt Text](./image/phase_wheel.png)
-
 In its simplest form, a direct digital synthesizer can be implemented from a phase accumulator, a D/A converter, and a reference clock.
 
 ### Phase Accumulator
 
 The phase accumulator is driven by the clock and steps through the phase cycle. Its output represents the phase information of the waveform being generated. In this example, it is implemented with a 32-bit word.
+
+![Alt Text](./image/phase_wheel.png)
 
 ### D/A Converter
 
