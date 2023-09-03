@@ -52,7 +52,7 @@ $f_{waveform}=\frac{f_{sampling} &times; M}{2^n}$
 
 The frequency resolution is defined as:
 
-$\frac{f_{sampling}}{2^n}=\frac{31311.15}{2^32}=7 &times; 10<sup>-6</sup> (Hz)$
+$\frac{f_{sampling}}{2^n}=\frac{31311.15}{2^32}=7 &times; 10<sup>-6</sup>Hz$
 
 ## Conclusion
 
