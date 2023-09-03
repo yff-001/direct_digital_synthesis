@@ -44,7 +44,7 @@ An interrupt is generated when the counter reaches zero. Since the nature of cou
 
 The phase accumulator is implemented with a 32 bit word. Whenever the phase accumulator is incremented, it is right shifted by 22 bits, only the upper 10 bits are used to retrieve waveform's amplitude from a 1024-element lookup table. The amplitude is stored as 8-bit integer in program space.
 
-$\(f_{waveform}\)$
+$f_{waveform}$
 
 ## Conclusion
 
