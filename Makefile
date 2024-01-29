@@ -13,15 +13,8 @@ PROGRAMMER = arduino
 MCU = atmega328p
 
 # Windows specific rules
-ifeq ($(OS), Windows_NT)
-# Windows specific rules
-PORT = COM3
+PORT = COM7
 RM = del /Q
-else
-# Linux specific rules
-PORT = /dev/ttyUSB0
-RM = rm
-endif
 
 # Directories
 SRC_DIR = src
@@ -55,7 +48,7 @@ size: $(TARGET)
 	avr-size --mcu=$(MCU) --format=avr $(TARGET)
 
 clean:
-	$(RM) $(OBJ_DIR)/*.o
-	$(RM) $(BIN_DIR)/*
+	$(RM) $(OBJ_DIR)\*.o
+	$(RM) $(BIN_DIR)\*
 
 .PHONY: all clean upload size
